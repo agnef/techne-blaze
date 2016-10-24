@@ -1,0 +1,18 @@
+<template name="liste_posts">
+	<div class="container">
+		<ul>
+		    {{#each liste_posts}}
+			{{>post}}
+		    {{/each}}
+		</ul>
+	</div>
+</template>
+
+<template name="post">
+
+	<li>{{text}}</li>
+	<li>{{author}}</li>
+	<li><img src="{{img}}"></li>
+	<p><button>Commenter</button></p>
+	
+</template>
