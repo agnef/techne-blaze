@@ -1,18 +1,25 @@
 <template name="liste_posts">
-	<div class="container">
-		<ul>
-		    {{#each liste_posts}}
-			{{>post}}
-		    {{/each}}
-		</ul>
+	{{>header}}
+	<div class="content">
+		{{>menu}}
+		<div class="container">
+			<h2>Derniers posts</h2>
+			<ul class="posts">
+			    {{#each liste_posts}}
+			    <li>
+					{{>post}}
+				</li>
+			    {{/each}}
+			</ul>
+		</div>
 	</div>
 </template>
 
 <template name="post">
 
-	<li>{{text}}</li>
-	<li>{{author}}</li>
-	<li><img src="{{img}}"></li>
+	<p><span>{{text}}</span></p>
+	<p><span>{{author}}</span></p>
+	<img src="{{url}}">
 	<p><button>Commenter</button></p>
 	
 </template>
