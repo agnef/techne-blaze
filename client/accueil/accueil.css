@@ -1,0 +1,54 @@
+.accueil{
+    background: url('../img/sfondo2.jpg') no-repeat center fixed;
+    background-size: cover;
+    align-items: center;
+	display: flex;
+	flex-direction: column;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    position: fixed;
+}
+
+.imgA{
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin-top: 200px;
+    margin-right: 150px;
+    margin-left: 150px;
+    width: 50%;
+	/*height: 50%;*/
+}
+
+.buttonA {
+	border-radius: 20px;
+    background-color: white; 
+    border: 2px solid;
+    color: #3d5c5c;
+    padding: 8px 18px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    border-color: #3d5c5c;
+    cursor: pointer;
+     -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}
+
+.buttonA:hover{ 
+	background-color: #3d5c5c;
+    color: white;
+ }
+
+ /*pour cacher liste_posts avant de cliquer sur se connecter*/
+ .listeP{
+ 	display: none;
+ }
+
+ /*pour cacher le formulaire avant de cliquer sur s'inscrire*/
+ .form{
+    display: none;
+ }
