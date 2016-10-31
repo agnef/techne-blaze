@@ -1,0 +1,19 @@
+
+ .formInscription{
+ 	display: flex;
+ 	flex-direction: column; 
+ 	margin: auto;	
+ }
+
+ .contenaireform{
+ 	display: flex;
+ 	width: 600px;
+    min-height: 100%;
+    background: white;
+    margin: auto;
+ }
+
+ .formInscription p{
+ 	display: flex;
+ 	justify-content: space-between;
+ }
