@@ -1,7 +1,10 @@
 <template name="liste_posts">
 	{{>header}}
-	<div class="content">
-		{{>menu}}
+	<ul class="menu_mobile">
+		<li><a href="#">Mon profil</a></li>
+		<li><a href="#">Ajouter un post</a></li>
+		<li><a onclick = "$('.accueil').show(); $('.listeP').hide();">Se déconnecter</a></li>
+	</ul>
 		<div class="container">
 			<h2>Derniers posts</h2>
 			<ul class="posts">
@@ -12,14 +15,13 @@
 			    {{/each}}
 			</ul>
 		</div>
-	</div>
 </template>
 
 <template name="post">
 
-	<p><span>{{text}}</span></p>
-	<p><span>{{author}}</span></p>
 	<img src="{{url}}">
+	<p><span class="legende">{{text}}</span></p>
+	<p><span>{{author}}</span></p>
 	<p><button>Commenter</button></p>
 	
 </template>

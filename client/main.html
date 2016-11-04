@@ -1,10 +1,15 @@
 <head>
   <title>Techne</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="acceuil.css">
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   </meta>
 </head>
 <body>
-  {{>liste_posts}}
+  <div> {{>accueil}}</div>
+  <div class="listeP">
+    {{>liste_posts}}
+  </div>
+  <div class="form">
+    {{>formulaire}}
+  </div>
 </body>
