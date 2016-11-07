@@ -1,0 +1,108 @@
+/*barre de titre*/
+header {
+    color: #f2f2f2;
+    background-image: url('../img/sfondo2.jpg');
+    padding: 20px 15px 15px 15px;
+    position: relative;
+
+}
+/*input qui permet de rechercher un artiste*/
+.search {
+    width: 200px;
+    padding:8px 15px;
+    background: #f2f2f2;
+    border:0px solid #dbdbdb;
+}
+/*image Techne*/
+.titre {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.titre img {
+    max-width: 50%;
+}
+.menu {
+    list-style: none;
+    overflow: hidden;
+    text-align: right;
+    float: right;
+}
+.menu li {
+    cursor: pointer;
+    display: inline;
+    padding: 5px;
+}
+.menu a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: #f2f2f2;
+}
+.menu a:hover{
+    text-decoration: underline;
+}
+
+.menu_mobile {
+	display: none;
+   list-style: none;
+   text-align: center;
+   margin: 4em auto;
+}
+.menu_mobile li {   
+	margin: 0 auto;	
+	cursor: pointer;
+   padding: 5px;
+}
+.menu_mobile a {
+	font-size: 20px;
+	margin: 0;
+   text-transform: uppercase;
+   text-decoration: none;
+   font-weight: bold;
+   color: #3d5c5c;
+}
+
+.menu_mobile li:hover {
+	background-color: #b3cccc;
+}
+.bt_menu_mobile {
+  display: none;
+  cursor: pointer;
+  padding-top: 20px;
+  font-size: 20px;
+  position: absolute;
+  right: 22px;
+  top: 0;
+  width: 30px;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+.bt_menu_mobile span {
+  width: 30px;
+  height: 4px;
+  margin-bottom: 6px;
+  border-radius: 1000px;
+  background: #f2f2f2;
+  display: block;
+}
+
+@media (max-width: 850px) {
+    .menu {
+        display: none;
+    }
+    .bt_menu_mobile {
+        display: block;
+    }
+
+    li {
+        padding: 12px 15px;
+    }
+
+    .search {
+        width: 150px;
+        clear: both;
+    }
+}

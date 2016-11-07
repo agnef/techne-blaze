@@ -14,48 +14,16 @@ body {
     margin: 0;
     font-size: 14px;
 }
-.content {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-.left_container {
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    max-width: 20%;
-    
-} 
-
 
 .container {
+    margin: auto;
     max-width: 800px;
     min-height: 100%;
     background: white;
 
 }
 
-.right_container {
-    max-width : 30%;
-}
-
-header {
-    color: #f2f2f2;
-    /*background: #3d5c5c;*/
-    background-image: url('../img/sfondo2.jpg');
-    padding: 20px 15px 15px 15px;
-    position: relative;
-
-}
-
-.search {
-    width: 200px;
-    padding:8px 15px;
-    background: #e0ebeb;
-    border:0px solid #dbdbdb;
-}
-
+/*légende de chaque post*/
 .legende {
     padding: 5px;
     background-color: #f2f2f2;
@@ -85,15 +53,7 @@ img {
     max-width: 70%;
     height: auto;
 }
-.titre {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-}
 
-.titre img {
-    max-width: 50%;
-}
 
 h1 {
     font-size: 1.5em;
@@ -118,33 +78,12 @@ h1 {
 }
 
 
-/*MENU*/
-.menu {
-    list-style: none;
-
-}
-
-.menu li {
-    padding: 10px;
-    border : 1px solid ;
-    border-radius: 15px;
-    background-color: #3d5c5c;
-    color: white;
-}
-
-.menu li:hover {
-    background-color: white;
-    color: #3d5c5c;
-}
-
-@media (max-width: 600px) {
-
+@media (max-width: 850px) {
+    
     li {
         padding: 12px 15px;
     }
-    .titre td {
-        padding-right: 0px;
-    }
+
     .search {
         width: 150px;
         clear: both;
