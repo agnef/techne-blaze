@@ -4,37 +4,39 @@
     align-items: center;
 	display: flex;
 	flex-direction: column;
+    justify-content: center;
     height: 100%;
     width: 100%;
-    left: 0;
-    top: 0;
     overflow: hidden;
     position: fixed;
 }
 
+.accueil div {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 .imgA{
+    display: flex;
+    flex-direction: column;
 	align-items: center;
-	display: flex;
-	flex-direction: column;
-	margin-top: 200px;
-    margin-right: 150px;
-    margin-left: 150px;
-    width: 50%;
-	/*height: 50%;*/
+    width: 90%;
 }
 
 .buttonA {
-	border-radius: 20px;
+    border-radius: 20px;
+    width: 158px;
     background-color: white; 
     border: 2px solid;
     color: #3d5c5c;
-    padding: 8px 18px;
+    margin-top: 0;
     text-align: center;
     display: inline-block;
     font-size: 18px;
     border-color: #3d5c5c;
     cursor: pointer;
-     -webkit-transition-duration: 0.4s; 
+    -webkit-transition-duration: 0.4s; 
     transition-duration: 0.4s;
 }
 
