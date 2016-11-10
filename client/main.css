@@ -38,8 +38,9 @@ h2 {
 }
  
  button {
+    width: 158px;
     border-radius: 20px;
-    background-color: #3d5c5c; /* Green */
+    background-color: #3d5c5c;
     border: none;
     color: white;
     padding: 8px 18px;
