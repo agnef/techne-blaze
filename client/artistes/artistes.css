@@ -1,0 +1,47 @@
+.recherche_artistes {
+	display: none;
+}
+
+.recherche ul {
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+.recherche li {
+    position: relative;
+    list-style: none;
+    padding: 15px;
+    border-bottom: #eee solid 2px;
+}
+
+.recherche img {
+	display: flex;
+	max-width: 150px;
+}
+
+.recherche li {
+	border: 1px solid rgba(0,0,0,0);
+	display: flex;
+	justify-content: column;
+}
+
+.recherche li:hover {
+	cursor: pointer;
+	border: 1px solid gainsboro;
+}
+
+.recherche li div {
+	margin-right: 10px;
+}
+
+.nom_artiste {
+	font-weight: bold;
+}
+
+/*ARTISTES INDIVIDUELS*/
+
+
+.the_artist_Maier {
+	display: none;
+}

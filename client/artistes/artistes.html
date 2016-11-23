@@ -1,0 +1,64 @@
+<template name="artistes">
+	{{>header}}
+	<ul class="menu_mobile">
+		<li><a href="#">Mon profil</a></li>
+		<li><a onclick = "$('.accueil').show(); $('.listeP').hide();">Se déconnecter</a></li>
+	</ul>
+		<div class="container">
+			<div class="res_artistes">
+				<h2>Résultats de la recherche</h2>
+				<ul class="recherche">
+				    {{#each artistes}}
+				    <li onclick="$('.res_artistes').hide(); $('.the_artist_'+'{{lastname}}').show();">
+						{{>artiste}}
+					</li>
+				    {{/each}}
+				</ul>
+			</div>
+
+			<div>
+				{{artistes.firstname}}
+				{{#each a in artistes}}
+					{{a.lastname}}
+				{{/each}}
+			</div>
+
+			<div class="the_artist_Dali">			{{>dali}}		</div>
+			<div class="the_artist_Pollock">		{{>pollock}}	</div>
+			<div class="the_artist_Maier">		{{>maier}}		</div>
+			<div class="the_artist_Kandinsky">	{{>kandinsky}}	</div>
+			<div class="the_artist_Marc">			{{>marc}}		</div>
+		</div>
+</template>
+
+<template name="artiste">
+	<div><img src="{{photo}}"></div>
+	<div>
+		<p class="nom_artiste">{{firstname}} {{lastname}}</p>
+		<p><span>{{description}}</span></p>
+	</div>
+</template>
+
+
+
+
+<template name="dali">
+	<p></p>
+	
+</template>
+
+<template name="pollock">
+	
+</template>
+
+<template name="maier">
+	
+</template>
+
+<template name="kandinsky">
+	
+</template>
+
+<template name="marc">
+	
+</template>
