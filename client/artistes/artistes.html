@@ -16,13 +16,6 @@
 				</ul>
 			</div>
 
-			<div>
-				{{artistes.firstname}}
-				{{#each a in artistes}}
-					{{a.lastname}}
-				{{/each}}
-			</div>
-
 			<div class="the_artist_Dali">			{{>dali}}		</div>
 			<div class="the_artist_Pollock">		{{>pollock}}	</div>
 			<div class="the_artist_Maier">		{{>maier}}		</div>
@@ -43,7 +36,8 @@
 
 
 <template name="dali">
-	<p></p>
+	<h2>Salvador Dali</h2>
+	<p>Artiste</p>
 	
 </template>
 

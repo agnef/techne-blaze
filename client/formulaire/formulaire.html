@@ -29,9 +29,23 @@
 			Confirmer le mot de passe:
 			<input type="password" name="confpassword">
 		</p>
-		<p><button>Valider</button></p>
+		<p><button onclick="$( '.descr' ).show(); $('.accueil').hide(); $('.form').hide();">Valider</button></p>
 		<!-- <input type="submit" value="Valider"> -->
 	</form>
 	
+</div>
+</template>
+
+
+<template name="description">
+<header>
+	<img src="../img/logo4b.png" style="max-width: 50%">
+</header>
+<div>
+	<form>
+		<p>Remplir une description de soi-même : </p>
+		<input type="text" name="description" size="200" height="100" width="100">
+		<p><button>Valider</button></p>
+	</form>
 </div>
 </template>
