@@ -54,3 +54,8 @@
  .form{
     display: none;
  }
+
+/*pour cacher la partie de la description avant de cliquer sur valider dans le formulaire*/
+ .descr{
+    display: none;
+ }
