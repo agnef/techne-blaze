@@ -6,17 +6,20 @@
 	<form class="formInscription">
 		<h1>Inscription</h1>
 		
-		<p>Nom:
+		<p>Prénom:
 			<input type="text" name="lastname">
 		</p>
-		<p>Prénom:
+		<p>Nom:
 			<input type="text" name="firstname">
 		</p>
 		
-		<p>Choisir un type:
-			<input type="radio" name="gender" value="male" checked> Artiste
-			<input type="radio" name="gender" value="female"> Mécène
-		</p>
+		<div class="types"> <p>Choisir un type: </p>
+		    <div class="type">
+				<p><input type="radio" name="gender" checked> Artiste </p>  
+			    <p><input type="radio" name="gender"> Mécène </p>
+		    </div>	
+		</div>
+
 		<p>Adresse e-mail:
 			<input type="text" name="mail">
 		</p>
@@ -26,12 +29,12 @@
 			<input type="password" name="password">
 		</p>
 		<p>
-			Confirmer le mot de passe:
+			Confirmer le mot de passe: 
 			<input type="password" name="confpassword">
 		</p>
-		<p><button onclick="$( '.descr' ).show(); $('.accueil').hide(); $('.form').hide();">Valider</button></p>
-		<!-- <input type="submit" value="Valider"> -->
+		
 	</form>
+	<button onclick="$( '.descr' ).show(); $( '.accueil' ).hide(); $( '.form' ).hide();">Valider</button>
 	
 </div>
 </template>
@@ -42,9 +45,10 @@
 	<img src="../img/logo4b.png" style="max-width: 50%">
 </header>
 <div>
-	<form>
-		<p>Remplir une description de soi-même : </p>
-		<input type="text" name="description" size="200" height="100" width="100">
+	<form class="description">
+		<h1>Remplir une description de soi-même : </h1>
+		<textarea>...</textarea>
+		<!-- <input type="text" name="description" size="200" height="100" width="100"> -->
 		<p><button>Valider</button></p>
 	</form>
 </div>
