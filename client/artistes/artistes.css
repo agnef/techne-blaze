@@ -38,10 +38,50 @@
 .nom_artiste {
 	font-weight: bold;
 }
+@media (max-width: 600px) {
+	.recherche li {
+		flex-direction: row;
+	}
+}
+/*PROFIL DES ARTISTES*/
+
+.photo img{
+	display: flex;
+	max-width: 200px;
+}
+
+.oeuvres {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.oeuvres img {
+   height: auto;
+	display: flex;
+	margin-bottom: 40px;
+}
+
 
 /*ARTISTES INDIVIDUELS*/
 
-
+.the_artist_Dali {
+	display: none;
+	margin : 50px;
+}
 .the_artist_Maier {
 	display: none;
+	margin : 50px;
+}
+.the_artist_Pollock {
+	display: none;
+	margin : 50px;
+}
+.the_artist_Marc {
+	display: none;
+	margin : 50px;
+}
+.the_artist_Kandinsky {
+	display: none;
+	margin : 50px;
 }
