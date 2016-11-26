@@ -47,6 +47,27 @@ button {
 	margin-top: 20px;
 }
 
+.ajoutP button {
+	border-radius: 20px;
+    width: 250px;
+    background-color: white; 
+    border: 2px solid;
+    color: #3d5c5c;
+    margin-top: 0;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    border-color: #3d5c5c;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}
+
+.ajoutP button:hover{
+	background-color: #3d5c5c;
+    color: white;
+}
+
 @media (max-width: 600px) {
 	.contenaireform {
 		margin-top: 0px;
