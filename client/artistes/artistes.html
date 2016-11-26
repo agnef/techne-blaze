@@ -2,7 +2,8 @@
 	{{>header}}
 	<ul class="menu_mobile">
 		<li><a href="#">Mon profil</a></li>
-		<li><a onclick = "$('.accueil').show(); $('.listeP').hide();">Se déconnecter</a></li>
+		<li><a onclick = "$( '.res_artistes' ).hide(); $('.listeP').show();" >Posts</a></li>
+		<li><a onclick = "$( '.inside' ).hide(); $('.accueil').show();" >Se déconnecter</a></li>
 	</ul>
 		<div class="container">
 			<div class="res_artistes">
@@ -36,23 +37,46 @@
 
 
 <template name="dali">
+	<button onclick="$('.the_artist_Dali').hide(); $( '.res_artistes' ).show();">Retour</button>
 	<h2>Salvador Dali</h2>
 	<p>Artiste</p>
-	
+	<div class="photo"><img src="img/salvador_dali.jpeg"></div>
+	<p>Le réalisme ? Avec modération.</p>
+	<div class="oeuvres"><img src="img/papillons.jpg"></div>
 </template>
 
 <template name="pollock">
-	
+<button onclick="$('.the_artist_Pollock').hide(); $( '.res_artistes' ).show();">Retour</button>
+	<h2>Jackson Pollock</h2>
+	<p>Artiste</p>
+	<div class="photo"><img src="img/jackson_pollock.jpeg"></div>
+	<p>Je m'inscris dans le mouvement expressioniste abstrait, c'est ce qu'il se passe quand on fait des gribouillis. J'aime beaucoup le travail de Lee Krasner et de Mark Tobey.</p>
+	<div class="oeuvres"><img src="img/alternativeVerticale_horizontalePollock.jpeg"></div>
 </template>
 
 <template name="maier">
-	
+<button onclick="$('.the_artist_Maier').hide(); $( '.res_artistes' ).show();">Retour</button>
+	<h2>Vivian Maier</h2>
+	<p>Artiste</p>	
+	<div class="photo"><img src="img/vivian_maier.jpg"></div>
+	<p>J'ai toujours été passionnée par la photographie. J'y consacre tout mon temps libre.</p>
+	<div class="oeuvres"><img src="img/photo1maier.jpeg"><img src="img/photo2maier.jpeg"><img src="img/photo3maier.jpeg"><img src="img/photo4maier.jpeg"><img src="img/photo5maier.jpeg"><img src="img/photo6maier.jpeg"><img src="img/photo7maier.jpeg"></div>
 </template>
 
 <template name="kandinsky">
-	
+<button onclick="$('.the_artist_Kandinsky').hide(); $( '.res_artistes' ).show();">Retour</button>
+	<h2>Vassily Kandinsky</h2>
+	<p>Artiste</p>	
+	<div class="photo"><img src="img/vassily_kandinsky.jpg"></div>
+	<p>Je suis passionné par la science, ma synesthésie m'aide à mieux comprendre nos découvertes en plein essort.</p>
+	<div class="oeuvres"><img src="img/le_filet_1942.jpeg"><img src="img/ligne_blanche.jpeg"><img src="img/trente.jpeg"></div>
 </template>
 
 <template name="marc">
-	
+<button onclick="$('.the_artist_Marc').hide(); $( '.res_artistes' ).show();">Retour</button>
+	<h2>Franz Marc</h2>
+	<p>Artiste</p>	
+	<div class="photo"><img src="img/franz_marc.jpeg"></div>
+	<p>J'ai une grande admiration pour Edvard Munch et Vincent van Gogh.</p>
+	<div class="oeuvres"><img src="img/cheval_mark.jpg"><img src="img/renards.jpeg"></div>
 </template>
