@@ -38,50 +38,79 @@
 .nom_artiste {
 	font-weight: bold;
 }
-@media (max-width: 600px) {
-	.recherche li {
-		flex-direction: row;
-	}
-}
+
 /*PROFIL DES ARTISTES*/
 
+.photo{
+	display: flex;
+	align-items: flex-start;
+	padding-bottom: 50px;
+	padding: 10px;
+	border: 1px solid #c2d6d6;
+}
 .photo img{
 	display: flex;
 	max-width: 200px;
+	padding-right: 20px;
 }
 
 .oeuvres {
+	margin-top: 50px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	align-items: center;
 }
 
 .oeuvres img {
    height: auto;
+   max-width: auto;
 	display: flex;
-	margin-bottom: 40px;
+	margin-bottom: 8px;
+	margin-top: 30px;
 }
 
+.oeuvres p {
+	border-bottom: 1px solid gainsboro;
+	padding-bottom: 50px;
+}
+.back {
+	max-width: 55px;
+	font-size: 2em;
+	font-family: 'Ropa Sans', sans-serif;
+	border-radius: 100%;
+}
+
+.profile_header{
+	display: flex;
+	font-size: 30px;
+	align-items: flex-end;
+	justify-content: space-between;
+	margin: 0;
+}
+
+.profile_name {
+	margin-left: 0;
+}
 
 /*ARTISTES INDIVIDUELS*/
 
-.the_artist_Dali {
+.the_artist_Dali, .the_artist_Maier, .the_artist_Pollock, .the_artist_Marc, .the_artist_Kandinsky {
 	display: none;
 	margin : 50px;
 }
-.the_artist_Maier {
-	display: none;
-	margin : 50px;
+
+.the_artist_Dali .type, .the_artist_Maier .type, .the_artist_Pollock .type, .the_artist_Marc .type, .the_artist_Kandinsky .type{
+	font-style: italic;
+	color: #527a7a;
+	font-size: 25px;
 }
-.the_artist_Pollock {
-	display: none;
-	margin : 50px;
-}
-.the_artist_Marc {
-	display: none;
-	margin : 50px;
-}
-.the_artist_Kandinsky {
-	display: none;
-	margin : 50px;
+
+@media (max-width: 600px) {
+	.recherche li {
+		flex-direction: row;
+	}
+	.photo {
+		flex-direction: column;
+		align-items: flex-start;
+	}
 }

@@ -19,21 +19,6 @@ body {
     display : none;
 }
 
-.container {
-    margin: auto;
-    max-width: 800px;
-    min-height: 100%;
-    background: white;
-
-}
-
-/*légende de chaque post*/
-.legende {
-    padding: 5px;
-    background-color: #f2f2f2;
-    border: 1px #d9d9d9 solid;
-    font-style: italic;
-}
 
 h2 {
     padding-top: 10px;
@@ -43,6 +28,7 @@ h2 {
 }
  
  button {
+    margin-top: 0px;
     width: 158px;
     border-radius: 20px;
     background-color: #3d5c5c;
@@ -70,19 +56,22 @@ h1 {
 }
 
 
-.posts ul {
-    margin: 0;
-    padding: 0;
-    background: white;
+.go-top {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(61, 92, 92, 0.3);
+    font-size: 12px;
+    padding: 1em;
+    display: none;
+    border-radius : 100% ;
 }
 
-.posts li {
-    position: relative;
-    list-style: none;
-    padding: 15px;
-    border-bottom: #eee solid 2px;
+.go-top:hover {
+    background-color: rgba(61, 92, 92, 0.6);
 }
-
 
 @media (max-width: 850px) {
     
