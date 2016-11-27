@@ -12,15 +12,22 @@ $(function() {
 			$('.menu_mobile').hide();
 		}
 	});
-	// Mobile Navigation mouais
-	// $('.bt_menu_mobile').click(function() {
-	//     if ($('.menu').hasClass('menu')) {
-	//         $('.menu').addClass('menu_mobile');
-	//         $('.menu').removeClass('menu');
-	//     } else {
-	//     	$('.menu_mobile').addClass('menu');
-	//     	$('menu').removeClass('menu_mobile');
-	//     }
-	// });
+});
 
+$(document).ready(function() {
+	// Show or hide the sticky footer button
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 200) {
+			$('.go-top').fadeIn(200);
+		} else {
+			$('.go-top').fadeOut(200);
+		}
+	});
+	
+	// Animate the scroll to top
+	$('.go-top').click(function(event) {
+		event.preventDefault();
+		
+		$('html, body').animate({scrollTop: 0}, 300);
+	})
 });

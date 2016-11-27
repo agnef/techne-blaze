@@ -1,0 +1,34 @@
+
+.listeP {
+    display: none;
+}
+
+
+.container {
+    margin: auto;
+    max-width: 800px;
+    min-height: 100%;
+    background: white;
+
+}
+.posts div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.posts {
+    padding-left: 0px;
+}
+
+.posts li {
+    padding-top: 50px;
+    position: relative;
+    list-style: none;
+    border-bottom: #eee solid 2px;
+}
+
+/*légende de chaque post*/
+.legende {
+    font-style: italic;
+}
