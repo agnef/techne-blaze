@@ -9,6 +9,18 @@
 	padding: 20px 20px 20px 20px;
 }
 
+.ajPhotoP{
+	display: flex;
+	flex-direction: column;
+	max-width: 600px;
+	min-height: 100%;
+	background: white;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 20px 20px 20px 20px;	
+}
+
 .formDescriptionP {
 	display: flex;
 	flex-direction: column; 
@@ -16,10 +28,14 @@
 	margin-top: 20px;
 }
 
+.contenaireform button {
+	margin-top: 20px;
+}
+
 button {
 	display: flex;
 	align-self: center;
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
 .ajoutPost h1 {
