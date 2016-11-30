@@ -69,9 +69,12 @@
 	margin-top: 30px;
 }
 
-.oeuvres p {
+.oeuvres div {
 	border-bottom: 1px solid gainsboro;
 	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .back {
 	max-width: 55px;

@@ -1,67 +1,74 @@
 /*barre de titre*/
 header {
-    color: #f2f2f2;
-    background-image: url('../img/sfondo2.jpg');
-    padding: 20px 15px 15px 15px;
-    position: relative;
+  color: #f2f2f2;
+  background-image: url('../img/sfondo2.jpg');
+  padding: 20px 15px 15px 15px;
+  position: relative;
 
 }
 /*input qui permet de rechercher un artiste*/
 .search {
-    width: 200px;
-    padding:8px 15px;
-    background: #f2f2f2;
-    border:0px solid #dbdbdb;
+  display: flex;
+  width: 220px;
+  background: #f2f2f2;
+  border:0px solid #dbdbdb;
+  color: #3d5c5c;
+  border-radius: 0;
+  font-style: italic;
+  font-size: 12px;
+  padding: 5px;
+  text-align: left;
 }
 /*image Techne*/
 .titre {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .titre img {
-    max-width: 50%;
+  display: flex;
+  height: 100%;
 }
 .menu {
-    list-style: none;
-    overflow: hidden;
-    text-align: right;
-    float: right;
+  list-style: none;
+  overflow: hidden;
+  text-align: right;
+  float: right;
 }
 .menu li {
-    cursor: pointer;
-    display: inline;
-    padding: 5px;
+  cursor: pointer;
+  display: inline;
+  padding: 5px;
 }
 .menu a {
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: bold;
-    color: #f2f2f2;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  color: #f2f2f2;
 }
 .menu a:hover{
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .menu_mobile {
-	display: none;
-   list-style: none;
-   text-align: center;
-   margin: 4em auto;
+  display: none;
+  list-style: none;
+  text-align: center;
+  margin: 4em auto;
 }
 .menu_mobile li {   
-	margin: 0 auto;	
-	cursor: pointer;
-   padding: 5px;
+  margin: 0 auto;	
+  cursor: pointer;
+  padding: 5px;
 }
 .menu_mobile a {
-	font-size: 20px;
-	margin: 0;
-   text-transform: uppercase;
-   text-decoration: none;
-   font-weight: bold;
-   color: #3d5c5c;
+  font-size: 20px;
+  margin: 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  color: #3d5c5c;
 }
 
 .menu_mobile li:hover {
@@ -90,19 +97,19 @@ header {
 }
 
 @media (max-width: 850px) {
-    .menu {
-        display: none;
-    }
-    .bt_menu_mobile {
-        display: block;
-    }
+  .menu {
+    display: none;
+  }
+  .bt_menu_mobile {
+    display: block;
+  }
 
-    li {
-        padding: 12px 15px;
-    }
+  li {
+    padding: 12px 15px;
+  }
 
-    .search {
-        width: 150px;
-        clear: both;
-    }
+  .search {
+    width: 150px;
+    clear: both;
+  }
 }
