@@ -34,3 +34,5 @@ Template.artistes.helpers({
       email      : "franz.marc@mail.com"
     }]
 });
+
+
