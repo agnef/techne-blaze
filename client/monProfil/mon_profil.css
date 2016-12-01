@@ -1,0 +1,46 @@
+.mon_profil {
+	display: none;
+}
+
+.profil_annie {
+	margin: 50px;
+}
+
+.actions {
+	display: flex;
+	justify-content: space-around;
+}
+
+.actions button {
+	display: flex;
+	font-size: 14px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+.actions button:hover {
+	background-color: #f2f2f2;
+	color: #3d5c5c;
+}
+.modifier_mon_profil {
+	display: none;
+}
+
+.profile_header div {
+	display: flex;
+}
+
+.fa-pencil {
+	margin-top: 30px;
+	color: #5c8a8a;
+	width: 4px;
+}
+
+.fa-pencil:hover {
+	color: #94b8b8;
+	cursor: pointer;
+}
+
+.photo div {
+	display: flex;
+	flex-direction: column;
+}

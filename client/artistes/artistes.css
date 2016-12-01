@@ -102,7 +102,7 @@
 	margin : 50px;
 }
 
-.the_artist_Dali .type, .the_artist_Maier .type, .the_artist_Pollock .type, .the_artist_Marc .type, .the_artist_Kandinsky .type{
+.type{
 	font-style: italic;
 	color: #527a7a;
 	font-size: 25px;

@@ -3,12 +3,10 @@
 		<div class="titre">
 			<img src="../img/logo4b.png" style="max-width: 50%">
 			<form>
-				<!-- <input type="text" class="search" placeholder="Rechercher un artiste" onfocus="$('.recherche_artistes').show(); $('.listeP').hide();" /> -->
 				<button class="search" onclick="$('.recherche_artistes').show(); $('.listeP').hide();" >Rechercher un artiste...</button>
 			</form>
 			<ul class="menu">
-				<li><a href="#">Mon profil</a></li>
-				<li><a onclick = "
+				<li><a onclick="
 					$( '.res_artistes' ).hide(); 
 					$( '.the_artist_Dali' ).hide(); 
 					$( '.the_artist_Pollock' ).hide(); 
@@ -17,8 +15,21 @@
 					$( '.the_artist_Marc' ).hide(); 
 					$( '.menu_mobile' ).hide();
 					$( '.recherche_artistes' ).hide();
+					$( '.listeP' ).hide();
+					$( '.modifier_mon_profil').hide();
+					$('.mon_profil').show();">Mon profil</a></li>
+				<li><a onclick ="
+					$( '.res_artistes' ).hide(); 
+					$( '.the_artist_Dali' ).hide(); 
+					$( '.the_artist_Pollock' ).hide(); 
+					$( '.the_artist_Maier' ).hide();
+					$( '.the_artist_Kandinsky' ).hide();
+					$( '.the_artist_Marc' ).hide(); 
+					$( '.menu_mobile' ).hide();
+					$( '.recherche_artistes' ).hide();
+					$( '.modifier_mon_profil').hide();
 					$('.listeP').show(); ">Posts</a></li>
-				<li><a onclick = "$('.accueil').show(); 
+				<li><a onclick ="$('.accueil').show(); 
 					$( '.inside' ).hide();
 					$( '.res_artistes' ).hide(); 
 					$( '.the_artist_Dali' ).hide(); 
@@ -27,6 +38,7 @@
 					$( '.the_artist_Kandinsky' ).hide();
 					$( '.the_artist_Marc' ).hide(); 
 					$( '.menu_mobile' ).hide();
+					$( '.modifier_mon_profil').hide();
 					$( '.recherche_artistes' ).hide();">Se déconnecter</a></li>
 			</ul>
 		   <div class="bt_menu_mobile" onclick="$('.menu_mobile').toggle();">
@@ -38,8 +50,7 @@
 	</header>
 
 	<ul class="menu_mobile">
-		<li><a href="#">Mon profil</a></li>
-		<li><a onclick = "
+		<li><a onclick="
 			$( '.res_artistes' ).hide(); 
 			$( '.the_artist_Dali' ).hide(); 
 			$( '.the_artist_Pollock' ).hide(); 
@@ -48,16 +59,33 @@
 			$( '.the_artist_Marc' ).hide(); 
 			$( '.menu_mobile' ).hide();
 			$( '.recherche_artistes' ).hide();
+			$( '.listeP' ).hide();
+			$( '.menu_mobile' ).hide();
+			$( '.modifier_mon_profil').hide();
+			$('.mon_profil').show();">Mon profil</a></li>
+		<li><a onclick ="
+			$( '.res_artistes' ).hide(); 
+			$( '.the_artist_Dali' ).hide(); 
+			$( '.the_artist_Pollock' ).hide(); 
+			$( '.the_artist_Maier' ).hide();
+			$( '.the_artist_Kandinsky' ).hide();
+			$( '.the_artist_Marc' ).hide(); 
+			$( '.menu_mobile' ).hide();
+			$( '.recherche_artistes' ).hide();
+			$( '.menu_mobile' ).hide();
+			$( '.modifier_mon_profil').hide();
 			$('.listeP').show(); ">Posts</a></li>
-		<li><a onclick = "$( '.inside' ).hide(); 
-				$('.accueil').show();
-				$( '.res_artistes' ).hide(); 
-				$( '.the_artist_Dali' ).hide(); 
-				$( '.the_artist_Pollock' ).hide(); 
-				$( '.the_artist_Maier' ).hide();
-				$( '.the_artist_Kandinsky' ).hide();
-				$( '.the_artist_Marc' ).hide(); 
-				$( '.menu_mobile' ).hide();
-				$( '.recherche_artistes' ).hide();" >Se déconnecter</a></li>
+		<li><a onclick ="
+			$( '.inside' ).hide(); 
+			$('.accueil').show();
+			$( '.res_artistes' ).hide(); 
+			$( '.the_artist_Dali' ).hide(); 
+			$( '.the_artist_Pollock' ).hide(); 
+			$( '.the_artist_Maier' ).hide();
+			$( '.the_artist_Kandinsky' ).hide();
+			$( '.the_artist_Marc' ).hide(); 
+			$( '.menu_mobile' ).hide();
+			$( '.modifier_mon_profil').hide();
+			$( '.recherche_artistes' ).hide();" >Se déconnecter</a></li>
 	</ul>
 </template>
