@@ -8,26 +8,38 @@
 			</div>
 			<div class="photo">
 				<img src="img/annie_leibovitz.jpeg">
+				<div style="display: none;" class="popup">
+					<ul>
+						<li><i class="fa fa-check" aria-hidden="true"></i></li>
+						<li> Modifications enregistrées</li>
+					</ul>
+				</div>
 				<p><span class="descrip">Je me suis spécialisée dans les portraits de célébrités. Je cherche à mettre en valeur ce qu'on peut trouver de glamour dans mes modèles.</span></p>
 			</div>
 			<div class="actions">
-				<button onclick="$('.modifier_mon_profil').show(); $('.mon_profil').hide();">Modifier le profil</button><button onclick="$( '.ajout_post' ).show(); $('.container').hide();">Ajouter un Post</button>
+				<button onclick="$('.modifier_mon_profil').show(); $('.mon_profil').hide();">Modifier le profil</button><button onclick="
+				$( '.accueil' ).hide();
+				$( '.menu_mobile' ).hide();
+				$( '.mon_profil' ).hide();
+				$( '.recherche_artistes').hide();
+				$( '.ajout_post').show();
+				">Ajouter un Post</button>
 			</div>
 			<div class="oeuvres">
 				<div>
 					<img src="img/demi_moore.jpeg">
 					<p>Demi's Birthday Suit, 1992</p>
-					<!-- <p><button>Commenter</button></p> -->
+					<p><button>Commenter</button></p>
 				</div>
 				<div>
 					<img src="img/miss_owl.jpeg">
 					<p>Whoopi Goldberg, 1984</p>
-					<!-- <p><button>Commenter</button></p> -->
+					<p><button>Commenter</button></p>
 				</div>
 				<div>
 					<img src="img/natalia.jpg">
 					<p>Natalia Vodianova, 1996</p>
-					<!-- <p><button>Commenter</button></p> -->
+					<p><button>Commenter</button></p>
 				</div>
 			</div>
 		</div>
@@ -46,31 +58,45 @@
 				<p class="type"> Artiste</p>
 			</div>
 			<div class="photo">
-				<img src="img/annie_leibovitz.jpeg">
-				<div><p><span class="descrip">Je me suis spécialisée dans les portraits de célébrités. Je cherche à mettre en valeur ce qu'on peut trouver de glamour dans mes modèles.</span></p>
-				<i class="fa fa-pencil" aria-hidden="true"></i>
+				<div class="photo_img">
+					<img src="img/annie_leibovitz.jpeg">
+					<div class="img_menu">{{>img_menu}}</div>
 				</div>
+				<div><p><span class="descrip">Je me suis spécialisée dans les portraits de célébrités. Je cherche à mettre en valeur ce qu'on peut trouver de glamour dans mes modèles.</span></p><i class="fa fa-pencil" aria-hidden="true"></i></div>
 			</div>
 			<div class="actions">
-				<button>Enregistrer les modifications</button><button>Ajouter un Post</button>
+				<button onclick="
+				$('.modifier_mon_profil').hide();
+				$('.mon_profil').show();
+				$('.popup').show();
+				$('.popup').fadeOut(800).delay(5000);
+
+				">Enregistrer les modifications</button>
 			</div>
 			<div class="oeuvres">
 				<div>
 					<img src="img/demi_moore.jpeg">
 					<p>Demi's Birthday Suit, 1992</p>
-					<p><button>Commenter</button></p>
+					<p class="img_menu">{{>img_menu}}</p>
 				</div>
 				<div>
 					<img src="img/miss_owl.jpeg">
 					<p>Whoopi Goldberg, 1984</p>
-					<p><button>Commenter</button></p>
+					<p class="img_menu">{{>img_menu}}</p>
 				</div>
 				<div>
 					<img src="img/natalia.jpg">
 					<p>Natalia Vodianova, 1996</p>
-					<p><button>Commenter</button></p>
+					<p class="img_menu">{{>img_menu}}</p>
 				</div>
 			</div>
 		</div>
 	</div>
+</template>
+
+<template name="img_menu">
+	<ul>
+		<li><i class="fa fa-pencil" aria-hidden="true"></i></li>
+		<li><i class="fa fa-trash" aria-hidden="true"></i></li>
+	</ul>
 </template>
