@@ -1,0 +1,76 @@
+<template name="mon_profil">
+	{{>header_menu}}
+	<div class="container">
+		<div class="profil_annie">
+			<div class="profile_header">
+				<h2 class="profile_name">Annie Leibovitz</h2>
+				<p class="type"> Artiste</p>
+			</div>
+			<div class="photo">
+				<img src="img/annie_leibovitz.jpeg">
+				<p><span class="descrip">Je me suis spécialisée dans les portraits de célébrités. Je cherche à mettre en valeur ce qu'on peut trouver de glamour dans mes modèles.</span></p>
+			</div>
+			<div class="actions">
+				<button onclick="$('.modifier_mon_profil').show(); $('.mon_profil').hide();">Modifier le profil</button><button onclick="$( '.ajout_post' ).show(); $('.container').hide();">Ajouter un Post</button>
+			</div>
+			<div class="oeuvres">
+				<div>
+					<img src="img/demi_moore.jpeg">
+					<p>Demi's Birthday Suit, 1992</p>
+					<!-- <p><button>Commenter</button></p> -->
+				</div>
+				<div>
+					<img src="img/miss_owl.jpeg">
+					<p>Whoopi Goldberg, 1984</p>
+					<!-- <p><button>Commenter</button></p> -->
+				</div>
+				<div>
+					<img src="img/natalia.jpg">
+					<p>Natalia Vodianova, 1996</p>
+					<!-- <p><button>Commenter</button></p> -->
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="modifier_mon_profil">
+	{{>header_menu}}
+	<div class="container">
+		<div class="profil_annie">
+			<div class="profile_header">
+				<div>
+					<h2 class="profile_name">Annie Leibovitz</h2>
+					<i class="fa fa-pencil" aria-hidden="true"></i>
+				</div>
+				<p class="type"> Artiste</p>
+			</div>
+			<div class="photo">
+				<img src="img/annie_leibovitz.jpeg">
+				<div><p><span class="descrip">Je me suis spécialisée dans les portraits de célébrités. Je cherche à mettre en valeur ce qu'on peut trouver de glamour dans mes modèles.</span></p>
+				<i class="fa fa-pencil" aria-hidden="true"></i>
+				</div>
+			</div>
+			<div class="actions">
+				<button>Enregistrer les modifications</button><button>Ajouter un Post</button>
+			</div>
+			<div class="oeuvres">
+				<div>
+					<img src="img/demi_moore.jpeg">
+					<p>Demi's Birthday Suit, 1992</p>
+					<p><button>Commenter</button></p>
+				</div>
+				<div>
+					<img src="img/miss_owl.jpeg">
+					<p>Whoopi Goldberg, 1984</p>
+					<p><button>Commenter</button></p>
+				</div>
+				<div>
+					<img src="img/natalia.jpg">
+					<p>Natalia Vodianova, 1996</p>
+					<p><button>Commenter</button></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
