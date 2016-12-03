@@ -24,8 +24,15 @@
 .formDescriptionP {
 	display: flex;
 	flex-direction: column; 
+	align-items: center;
 	margin: auto;	
 	margin-top: 20px;
+}
+
+.formDescriptionP input{
+	display: flex;
+	/*align-self: center;*/
+	width: 100%;
 }
 
 .contenaireform button {
@@ -42,4 +49,9 @@ button {
 	display: flex;
 	align-self: center;
 	margin-top: 20px;
+}
+
+.resultat {
+	margin: 20px;
+	font-size: 2em;
 }
