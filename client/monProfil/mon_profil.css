@@ -18,7 +18,7 @@
 	cursor: pointer;
 }
 .actions button:hover {
-	background-color: #f2f2f2;
+	background-color: #a3c2c2;
 	color: #3d5c5c;
 }
 .modifier_mon_profil {
@@ -30,10 +30,14 @@
 }
 
 .fa-pencil {
-	margin-top: 30px;
+	/*margin-top: 30px;*/
 	color: #5c8a8a;
 	width: 4px;
 }
+
+.profile_header .fa-pencil {
+	margin-top: 30px;
+} 
 
 .fa-pencil:hover {
 	color: #94b8b8;
@@ -43,4 +47,51 @@
 .photo div {
 	display: flex;
 	flex-direction: column;
+}
+
+.modifier_mon_profil img:hover {
+	cursor: pointer;
+}
+
+.photo {
+	display: flex;
+}
+
+.img_menu ul {
+	list-style: none;
+}
+.img_menu ul li {
+	display: inline;
+
+}
+
+.fa-trash {
+	cursor: pointer;
+	color: #cc0000;
+}
+.fa-trash:hover {
+	color: #ff1a1a;
+}
+.fa-check {
+	color: #3d5c5c;
+	margin-left: 0;
+}
+
+.popup {
+	padding: 0px;
+	border: 1px solid #d1e0e0;
+	border-radius: 5%;
+	background-color: #d1e0e0;
+	z-index: 10; 
+	position: absolute;
+	margin: auto;
+	margin-top: 100px;
+}
+
+.popup ul {
+	list-style: none;
+}
+
+.popup ul li {
+	display: inline;
 }

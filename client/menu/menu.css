@@ -6,7 +6,7 @@ header {
   position: relative;
 
 }
-/*input qui permet de rechercher un artiste*/
+/*bouton qui permet de rechercher un artiste*/
 .search {
   display: flex;
   width: 220px;
@@ -29,6 +29,7 @@ header {
 .titre img {
   display: flex;
   height: 100%;
+  cursor: pointer;
 }
 .menu {
   list-style: none;
