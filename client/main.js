@@ -5,6 +5,7 @@ import './main.html';
 import './posts/ListePosts.js';
 
 
+
 $(function() {
 	$(window).resize(function(){
 		var w = $(window).width();
@@ -31,4 +32,6 @@ $(document).ready(function() {
 		$('html, body').animate({scrollTop: 0}, 300);
 	})
 });
+
+
 

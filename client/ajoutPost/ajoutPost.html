@@ -1,4 +1,5 @@
 <template name="ajout_post">
+{{>header_menu}}
 	<div class="ajoutPost">	
 	<h2>Ajouter un post</h2>
 		<h1>Ajouter une photo</h1>
@@ -13,19 +14,27 @@
 		<div class="contenaireform">
 			<form class="formDescriptionP">
 				<h1>Description de l'oeuvre</h1>
-				<p>Date : 
+				<p>
+				<div class="calendar ui-btn"> Date : </div>
+				<input class="calendar-input" type="text" data-role="datebox"
+				        data-option='{"mode":"calbox","hideInput": true, "useModal": false,"overrideCalStartDay":1}'>
+				</p>
+				<p class="resultat"><span class="result"></span></p>
+
+				<p>Lieu : </p>
+				<p>
 					<input type="text" name="date">
 				</p>
-				<p>Lieu : 
+				<p>Thème : </p>
+				<p>
 					<input type="text" name="date">
 				</p>
-				<p>Thème : 
+				<p>Dimension : </p>
+				<p>
 					<input type="text" name="date">
 				</p>
-				<p>Dimension : 
-					<input type="text" name="date">
-				</p>
-				<p>Technique : 
+				<p>Technique : </p>
+				<p>
 					<input type="text" name="date">
 				</p>				
 			</form>
