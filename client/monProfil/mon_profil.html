@@ -4,7 +4,7 @@
 		<div class="profil_annie">
 			<div class="profile_header">
 				<h2 class="profile_name">Annie Leibovitz</h2>
-				<p class="type"> Artiste</p>
+				<p class="type_a"> Artiste</p>
 			</div>
 			<div class="photo">
 				<img src="img/annie_leibovitz.jpeg">
@@ -17,29 +17,36 @@
 				<p><span class="descrip">Je me suis spécialisée dans les portraits de célébrités. Je cherche à mettre en valeur ce qu'on peut trouver de glamour dans mes modèles.</span></p>
 			</div>
 			<div class="actions">
-				<button onclick="$('.modifier_mon_profil').show(); $('.mon_profil').hide();">Modifier le profil</button><button onclick="
+				<button class="default_button" onclick="
 				$( '.accueil' ).hide();
 				$( '.menu_mobile' ).hide();
 				$( '.mon_profil' ).hide();
 				$( '.recherche_artistes').hide();
 				$( '.ajout_post').show();
 				">Ajouter un Post</button>
+				<button class="default_button" onclick="
+				$('.modifier_mon_profil').show(); 
+				$('.mon_profil').hide();
+				">Modifier le profil</button>
 			</div>
 			<div class="oeuvres">
 				<div>
 					<img src="img/demi_moore.jpeg">
-					<p>Demi's Birthday Suit, 1992</p>
-					<p><button>Commenter</button></p>
+					<p class="legende">Demi's Birthday Suit, 1992</p>
+					<p class="poste_le">Posté le 3 décembre 2016</p>
+					<p><button  class="default_button">Commenter</button></p>
 				</div>
 				<div>
 					<img src="img/miss_owl.jpeg">
-					<p>Whoopi Goldberg, 1984</p>
-					<p><button>Commenter</button></p>
+					<p class="legende">Whoopi Goldberg, 1984</p>
+					<p class="poste_le">Posté le 12 novembre 2016</p>
+					<p><button class="default_button">Commenter</button></p>
 				</div>
 				<div>
 					<img src="img/natalia.jpg">
-					<p>Natalia Vodianova, 1996</p>
-					<p><button>Commenter</button></p>
+					<p class="legende">Natalia Vodianova, 1996</p>
+					<p class="poste_le">Posté le 25 octobre 2016</p>
+					<p><button class="default_button">Commenter</button></p>
 				</div>
 			</div>
 		</div>
@@ -51,21 +58,22 @@
 	<div class="container">
 		<div class="profil_annie">
 			<div class="profile_header">
-				<div>
-					<h2 class="profile_name">Annie Leibovitz</h2>
-					<i class="fa fa-pencil" aria-hidden="true"></i>
-				</div>
-				<p class="type"> Artiste</p>
+				<ul>
+					<li><h2 class="profile_name">Annie Leibovitz</h2></li>
+					<li><i class="fa fa-pencil" aria-hidden="true"></i></li>
+				</ul>
+				<p class="type_a"> Artiste</p>
+				
 			</div>
 			<div class="photo">
 				<div class="photo_img">
 					<img src="img/annie_leibovitz.jpeg">
-					<div class="img_menu">{{>img_menu}}</div>
 				</div>
 				<div><p><span class="descrip">Je me suis spécialisée dans les portraits de célébrités. Je cherche à mettre en valeur ce qu'on peut trouver de glamour dans mes modèles.</span></p><i class="fa fa-pencil" aria-hidden="true"></i></div>
 			</div>
 			<div class="actions">
-				<button onclick="
+				<button  class="default_button"
+				onclick="
 				$('.modifier_mon_profil').hide();
 				$('.mon_profil').show();
 				$('.popup').show();
@@ -76,27 +84,20 @@
 			<div class="oeuvres">
 				<div>
 					<img src="img/demi_moore.jpeg">
-					<p>Demi's Birthday Suit, 1992</p>
-					<p class="img_menu">{{>img_menu}}</p>
+					<p class="legende">Demi's Birthday Suit, 1992</p>
+					<p class="poste_le">Posté le 3 décembre 2016</p>
 				</div>
 				<div>
 					<img src="img/miss_owl.jpeg">
-					<p>Whoopi Goldberg, 1984</p>
-					<p class="img_menu">{{>img_menu}}</p>
+					<p class="legende">Whoopi Goldberg, 1984</p>
+					<p class="poste_le">Posté le 12 novembre 2016</p>
 				</div>
 				<div>
 					<img src="img/natalia.jpg">
-					<p>Natalia Vodianova, 1996</p>
-					<p class="img_menu">{{>img_menu}}</p>
+					<p class="legende">Natalia Vodianova, 1996</p>
+					<p class="poste_le">Posté le 25 octobre 2016</p>
 				</div>
 			</div>
 		</div>
 	</div>
-</template>
-
-<template name="img_menu">
-	<ul>
-		<li><i class="fa fa-pencil" aria-hidden="true"></i></li>
-		<li><i class="fa fa-trash" aria-hidden="true"></i></li>
-	</ul>
 </template>

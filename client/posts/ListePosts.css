@@ -4,13 +4,6 @@
 }
 
 
-.container {
-    margin: auto;
-    max-width: 800px;
-    min-height: 100%;
-    background: white;
-
-}
 .posts div{
     display: flex;
     flex-direction: column;
@@ -31,4 +24,13 @@
 /*légende de chaque post*/
 .legende {
     font-style: italic;
+}
+
+.author {
+    color: #3d5c5c;
+    font-weight: bold;
+}
+.poste_le {
+    color: #666666;
+    margin: 0;
 }

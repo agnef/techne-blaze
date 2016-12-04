@@ -12,22 +12,26 @@
 					$( '.menu_mobile' ).hide();
 					$( '.mon_profil' ).hide();
 					$( '.modifier_mon_profil').hide();
-					$( '.recherche_artistes' ).hide();"
+					$( '.recherche_artistes' ).hide();
+					$( '.listeP' ).hide();"
 					src="../img/logo4b.png" style="max-width: 50%">
 			<button class="search" onclick="
-				$( '.accueil' ).hide();
-				$( '.inside' ).show();
+				$( '.menu_mobile' ).hide();
 				$( '.the_artist_Dali' ).hide(); 
 				$( '.the_artist_Pollock' ).hide(); 
 				$( '.the_artist_Maier' ).hide();
 				$( '.the_artist_Kandinsky' ).hide();
-				$( '.the_artist_Marc' ).hide(); 
-				$( '.menu_mobile' ).hide();
+				$( '.the_artist_Marc' ).hide();
 				$( '.listeP' ).hide();
 				$( '.mon_profil' ).hide();
-				$( '.popup' ).hide();
-				$( '.modifier_mon_profil').hide();
-				$( '.recherche_artistes').show();" >Rechercher un artiste...</button>
+				$( '.recherche_artistes' ).show();
+				$( '.res_artistes' ).show();
+				" >
+				<ul>
+					<li><i class="fa fa-search" aria-hidden="true"></i></li>
+					<li>Rechercher</li>
+				</ul>
+				</button>
 			<ul class="menu">
 				<li><a onclick="
 					$( '.res_artistes' ).hide(); 
@@ -65,6 +69,7 @@
 					$( '.modifier_mon_profil').hide();
 					$( '.recherche_artistes' ).hide();
 					$( 'mon_profil' ).hide();
+					$( '.listeP' ).hide();
 					">Se déconnecter</a></li>
 			</ul>
 		   <div class="bt_menu_mobile" onclick="$('.menu_mobile').toggle();">
@@ -114,6 +119,26 @@
 			$( '.menu_mobile' ).hide();
 			$( '.mon_profil' ).hide();
 			$( '.modifier_mon_profil').hide();
+			$( '.listeP' ).hide();
 			$( '.recherche_artistes' ).hide();" >Se déconnecter</a></li>
 	</ul>
+	<div class="div_search_mobile">
+		<button class="search_mobile" onclick="
+					$( '.the_artist_Dali' ).hide(); 
+					$( '.the_artist_Pollock' ).hide(); 
+					$( '.the_artist_Maier' ).hide();
+					$( '.the_artist_Kandinsky' ).hide();
+					$( '.the_artist_Marc' ).hide();
+					$( '.menu_mobile' ).hide();
+					$( '.listeP' ).hide();
+					$( '.mon_profil' ).hide();
+					$( '.recherche_artistes' ).show();
+					$( '.res_artistes' ).show();
+					" >
+		<ul>
+			<li><i class="fa fa-search" aria-hidden="true"></i></li>
+			<li>Rechercher</li>
+		</ul>
+		</button>
+	</div>
 </template>

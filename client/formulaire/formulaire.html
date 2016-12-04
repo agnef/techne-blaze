@@ -1,60 +1,62 @@
 <template name="formulaire">
 <header>
-	<img src="../img/logo4b.png" style="max-width: 50%">
+	<img onclick="$('.form').hide(); $('.accueil').show(); " src="../img/logo4b.png" style="max-width: 50%">
 </header>
 <div class="contenaireform">
 	<form class="formInscription">
-		<h1>Inscription</h1>
+		<h2 style="margin-left: 0">Inscription</h2>
 		
-		<p>Prénom:
+		<p>Prénom :
 			<input type="text" name="lastname">
 		</p>
-		<p>Nom:
+		<p>Nom :
 			<input type="text" name="firstname">
 		</p>
 		
-		<div class="types"> <p>Choisir un type: </p>
+		<div class="types"> <p>Choisir un type : </p>
 		    <div class="type">
 				<p><input type="radio" name="gender" checked> Artiste </p>  
 			    <p><input type="radio" name="gender"> Mécène </p>
 		    </div>	
 		</div>
 
-		<p>Adresse e-mail:
+		<p>Adresse e-mail :
 			<input type="text" name="mail">
 		</p>
 		
 		<p>
-			Mot de passe:
+			Mot de passe :
 			<input type="password" name="password">
 		</p>
 		<p>
-			Confirmer le mot de passe: 
+			Confirmer le mot de passe : 
 			<input type="password" name="confpassword">
 		</p>
 		
 	</form>
-	<button onclick="$( '.descr' ).show(); $( '.accueil' ).hide(); $( '.form' ).hide();">Valider</button>
+	<button class="default_button" onclick="$( '.descr' ).show(); $( '.accueil' ).hide(); $( '.form' ).hide();">Valider</button>
 	
 </div>
 </template>
 
 
 <template name="description">
-<header>
-	<img src="../img/logo4b.png" style="max-width: 50%">
-</header>
-<div>
-	<form class="description">
-		<h1>Remplir une description de soi-même : </h1>
-		<textarea>...</textarea>
-		<h1>Ajouter une photo</h1>
-			<div class="ajoutP">
-			   <button><i class="fa fa-picture-o" aria-hidden="true"></i> Importer une photo</button>
-			   <button><i class="fa fa-camera" aria-hidden="true"></i> Prendre une photo</button>
+	<header>
+		<img onclick="$('.descr').hide(); $('.accueil').show();" src="../img/logo4b.png" style="max-width: 50%">
+	</header>
+	<div>
+		<div class="description">
+			<h2 style="margin-left: 0">Se décrire : </h2>
+			<textarea></textarea>
+			<h2 style="margin-left: 0">Ajouter une photo :</h2>
+			<div class="les_boutons">
+				<div class="ajoutP">
+				   <button><i class="fa fa-picture-o" aria-hidden="true"></i> Importer une photo</button>
+				   <button><i class="fa fa-camera" aria-hidden="true"></i> Prendre une photo</button>
+				</div>
+				<p><button onclick="$('.descr').hide(); $('.listeP').show();" class="default_button">Valider</button></p>
 			</div>
 
-		<p><button>Valider</button></p>
-	</form>
-</div>
+		</div>
+	</div>
 </template>
