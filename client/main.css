@@ -1,5 +1,6 @@
 html {
     font-family: "Raleway", sans-serif;
+    cursor: default;
 }
 
 body {
@@ -19,6 +20,12 @@ body {
     display : none;
 }
 
+.container {
+    margin: auto;
+    max-width: 800px;
+    min-height: 100%;
+    background: white;
+}
 
 h2 {
     padding-top: 10px;
@@ -41,6 +48,14 @@ h2 {
     font-size: 16px;
 }
 
+.default_button {
+    display: flex;
+    cursor: pointer;
+}
+.default_button:hover {
+    background-color: #a3c2c2;
+    color: #3d5c5c;
+}
 img {
     max-width: 70%;
     height: auto;
@@ -77,10 +92,5 @@ h1 {
     
     li {
         padding: 12px 15px;
-    }
-
-    .search {
-        width: 150px;
-        clear: both;
     }
 }

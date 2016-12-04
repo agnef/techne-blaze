@@ -25,6 +25,12 @@
 .formInscription input {
 	margin-left: 10px;
 }
+.form img {
+	cursor: pointer;
+}
+.descr img {
+	cursor: pointer;
+}
 
 .types {
 	display: flex;
@@ -39,6 +45,7 @@
 
 .type input {
 	margin-right: 30px;
+	cursor: pointer;
 }
 
 button {
@@ -49,25 +56,39 @@ button {
 
 .ajoutP button {
 	border-radius: 20px;
-    width: 250px;
-    background-color: white; 
-    border: 2px solid;
-    color: #3d5c5c;
-    margin-top: 0;
-    text-align: center;
-    display: inline-block;
-    font-size: 18px;
-    border-color: #3d5c5c;
-    cursor: pointer;
-    -webkit-transition-duration: 0.4s; 
-    transition-duration: 0.4s;
+	width: 250px;
+	background-color: white; 
+	border: 2px solid;
+	color: #3d5c5c;
+	margin-top: 0;
+	margin-bottom: 20px;
+	text-align: center;
+	display: inline-block;
+	border-color: #3d5c5c;
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s; 
+	transition-duration: 0.4s;
 }
 
 .ajoutP button:hover{
 	background-color: #3d5c5c;
-    color: white;
+   color: white;
 }
 
+.les_boutons {
+	display: flex;
+	flex-direction: column;
+}
+
+.les_boutons div {
+	display: flex;
+	justify-content: space-around;
+}
+
+.les_boutons p {
+	display: flex;
+	justify-content: center;
+}
 @media (max-width: 600px) {
 	.contenaireform {
 		margin-top: 0px;
