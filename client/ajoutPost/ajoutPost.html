@@ -1,46 +1,27 @@
 <template name="ajout_post">
 {{>header_menu}}
-	<div class="ajoutPost">	
-	<h2>Ajouter un post</h2>
-		<h2>Ajouter une photo : </h2>
-		<form class="ajPhotoP">			
+	
+	<div class="contenaireform">
+	<h2 style="margin-left: 0;">Ajouter un post :</h2>
+		<div class="les_boutons">			
 				<div class="ajoutP">
 				   <button><i class="fa fa-picture-o" aria-hidden="true"></i> Importer une photo</button>
 				   <button><i class="fa fa-camera" aria-hidden="true"></i> Prendre une photo</button>
 				</div>			
-		</form>
-		<button class="default_button">Valider</button>
-
-		<div class="contenaireform">
-			<form class="formDescriptionP">
-				<h2>Décrire l'oeuvre :</h2>
-				<p>
-				<div class="calendar ui-btn"> Date : </div>
-				<input class="calendar-input" type="text" data-role="datebox"
-				        data-option='{"mode":"calbox","hideInput": true, "useModal": false,"overrideCalStartDay":1}'>
-				</p>
-				<p class="resultat"><span class="result"></span></p>
-
-				<p>Lieu : </p>
-				<p>
-					<input type="text" name="date">
-				</p>
-				<p>Thème : </p>
-				<p>
-					<input type="text" name="date">
-				</p>
-				<p>Dimension : </p>
-				<p>
-					<input type="text" name="date">
-				</p>
-				<p>Technique : </p>
-				<p>
-					<input type="text" name="date">
-				</p>				
-			</form>
-			<button class="default_button">Valider</button>
+		</div>		
+		<div class="formInscription">
 			
-		</div>
+			<p>Titre : <input type="text" name="lastname"></p>
+			<p>Date : <input type="text" name="firstname"></p>
+			<p>Lieu : <input type="text" name="place"></p>
+			<p>Thème : <input type="text" name="theme"></p>
+			<p>Dimensions : <input type="text" name="dimensions"></p>
+			<p>Technique : <input type="text" name="technique"></p>
+		<button class="default_button" onclick="
+		$( '.mon_profil_ajoute' ).show(); 
+		$( '.ajout_post' ).hide(); 
+		">Valider</button>
+	</div>
 		
 	</div>
 </template>

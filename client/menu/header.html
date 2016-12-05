@@ -11,9 +11,11 @@
 					$( '.the_artist_Marc' ).hide(); 
 					$( '.menu_mobile' ).hide();
 					$( '.mon_profil' ).hide();
+					$( '.mon_profil_ajoute' ).hide();
 					$( '.modifier_mon_profil').hide();
 					$( '.recherche_artistes' ).hide();
-					$( '.listeP' ).hide();"
+					$( '.listeP' ).hide();
+					$( '.ajout_post' ).hide();"
 					src="../img/logo4b.png" style="max-width: 50%">
 			<button class="search" onclick="
 				$( '.menu_mobile' ).hide();
@@ -24,6 +26,8 @@
 				$( '.the_artist_Marc' ).hide();
 				$( '.listeP' ).hide();
 				$( '.mon_profil' ).hide();
+				$( '.mon_profil_ajoute' ).hide();
+				$( '.ajout_post' ).hide();
 				$( '.recherche_artistes' ).show();
 				$( '.res_artistes' ).show();
 				" >
@@ -41,10 +45,13 @@
 					$( '.the_artist_Kandinsky' ).hide();
 					$( '.the_artist_Marc' ).hide(); 
 					$( '.menu_mobile' ).hide();
+					$( '.mon_profil_ajoute' ).hide();
 					$( '.recherche_artistes' ).hide();
 					$( '.listeP' ).hide();
+					$( '.ajout_post' ).hide();
 					$( '.modifier_mon_profil').hide();
-					$( '.mon_profil').show();">Mon profil</a></li>
+					$( '.mon_profil').show();
+					">Mon profil</a></li>
 				<li><a onclick ="
 					$( '.res_artistes' ).hide(); 
 					$( '.the_artist_Dali' ).hide(); 
@@ -56,7 +63,10 @@
 					$( '.recherche_artistes' ).hide();
 					$( '.modifier_mon_profil').hide();
 					$( '.mon_profil' ).hide();
-					$( '.listeP').show(); ">Posts</a></li>
+					$( '.mon_profil_ajoute' ).hide();
+					$( '.ajout_post' ).hide();
+					$( '.listeP').show(); 
+					">Posts</a></li>
 				<li><a onclick ="$('.accueil').show(); 
 					$( '.inside' ).hide();
 					$( '.res_artistes' ).hide(); 
@@ -67,8 +77,10 @@
 					$( '.the_artist_Marc' ).hide(); 
 					$( '.menu_mobile' ).hide();
 					$( '.modifier_mon_profil').hide();
+					$( '.mon_profil_ajoute' ).hide();
 					$( '.recherche_artistes' ).hide();
 					$( 'mon_profil' ).hide();
+					$( '.ajout_post' ).hide();
 					$( '.listeP' ).hide();
 					">Se déconnecter</a></li>
 			</ul>
@@ -93,7 +105,10 @@
 			$( '.listeP' ).hide();
 			$( '.menu_mobile' ).hide();
 			$( '.modifier_mon_profil').hide();
-			$( '.mon_profil').show();">Mon profil</a></li>
+			$( '.mon_profil_ajoute' ).hide();
+			$( '.ajout_post' ).hide();
+			$( '.mon_profil').show();
+			">Mon profil</a></li>
 		<li><a onclick ="
 			$( '.res_artistes' ).hide(); 
 			$( '.the_artist_Dali' ).hide(); 
@@ -105,8 +120,11 @@
 			$( '.recherche_artistes' ).hide();
 			$( '.menu_mobile' ).hide();
 			$( '.mon_profil' ).hide();
+			$( '.ajout_post' ).hide();
 			$( '.modifier_mon_profil').hide();
-			$( '.listeP').show(); ">Posts</a></li>
+			$( '.mon_profil_ajoute' ).hide();
+			$( '.listeP').show(); 
+			">Posts</a></li>
 		<li><a onclick ="
 			$( '.inside' ).hide(); 
 			$(	'.accueil').show();
@@ -118,9 +136,12 @@
 			$( '.the_artist_Marc' ).hide(); 
 			$( '.menu_mobile' ).hide();
 			$( '.mon_profil' ).hide();
+			$( '.ajout_post' ).hide();
 			$( '.modifier_mon_profil').hide();
+			$( '.mon_profil_ajoute' ).hide();
 			$( '.listeP' ).hide();
-			$( '.recherche_artistes' ).hide();" >Se déconnecter</a></li>
+			$( '.recherche_artistes' ).hide();
+			" >Se déconnecter</a></li>
 	</ul>
 	<div class="div_search_mobile">
 		<button class="search_mobile" onclick="
@@ -133,6 +154,8 @@
 					$( '.listeP' ).hide();
 					$( '.mon_profil' ).hide();
 					$( '.recherche_artistes' ).show();
+					$( '.mon_profil_ajoute' ).hide();
+					$( '.ajout_post' ).hide();
 					$( '.res_artistes' ).show();
 					" >
 		<ul>

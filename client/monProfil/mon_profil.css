@@ -2,6 +2,10 @@
 	display: none;
 }
 
+.mon_profil_ajoute {
+	display: none;
+}
+
 .profil_annie {
 	margin-top: 20px;
 	padding: 20px;

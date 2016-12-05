@@ -22,10 +22,12 @@
 				$( '.menu_mobile' ).hide();
 				$( '.mon_profil' ).hide();
 				$( '.recherche_artistes').hide();
+				$( '.mon_profil_ajoute').hide();
 				$( '.ajout_post').show();
 				">Ajouter un Post</button>
 				<button class="default_button" onclick="
 				$('.modifier_mon_profil').show(); 
+				$( '.mon_profil_ajoute').hide();
 				$('.mon_profil').hide();
 				">Modifier le profil</button>
 			</div>
@@ -96,6 +98,70 @@
 					<img src="img/natalia.jpg">
 					<p class="legende">Natalia Vodianova, 1996</p>
 					<p class="poste_le">Posté le 25 octobre 2016</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
+
+
+<template name="mon_profil_ajoute">
+	{{>header_menu}}
+	<div class="container">
+		<div class="profil_annie">
+			<div class="profile_header">
+				<h2 class="profile_name">Annie Leibovitz</h2>
+				<p class="type_a"> Artiste</p>
+			</div>
+			<div class="photo">
+				<img src="img/annie_leibovitz.jpeg">
+				<div style="display: none;" class="popup">
+					<ul>
+						<li><i class="fa fa-check" aria-hidden="true"></i></li>
+						<li> Modifications enregistrées</li>
+					</ul>
+				</div>
+				<p><span class="descrip">Je me suis spécialisée dans les portraits de célébrités. Je cherche à mettre en valeur ce qu'on peut trouver de glamour dans mes modèles.</span></p>
+			</div>
+			<div class="actions">
+				<button class="default_button" onclick="
+				$( '.accueil' ).hide();
+				$( '.menu_mobile' ).hide();
+				$( '.mon_profil' ).hide();
+				$( '.recherche_artistes').hide();
+				$( '.mon_profil_ajoute').hide();
+				$( '.ajout_post').show();
+				">Ajouter un Post</button>
+				<button class="default_button" onclick="
+				$('.modifier_mon_profil').show(); 
+				$( '.mon_profil_ajoute').hide();
+				$('.mon_profil').hide();
+				">Modifier le profil</button>
+			</div>
+			<div class="oeuvres">
+				<div>
+					<img src="img/dancers.jpeg">
+					<p class="legende">Mikhail Baryshnikov and Rob Besserer, 1990</p>
+					<p class="poste_le">Posté le 6 décembre 2016</p>
+					<p><button  class="default_button">Commenter</button></p>
+				</div>
+				<div>
+					<img src="img/demi_moore.jpeg">
+					<p class="legende">Demi's Birthday Suit, 1992</p>
+					<p class="poste_le">Posté le 3 décembre 2016</p>
+					<p><button  class="default_button">Commenter</button></p>
+				</div>
+				<div>
+					<img src="img/miss_owl.jpeg">
+					<p class="legende">Whoopi Goldberg, 1984</p>
+					<p class="poste_le">Posté le 12 novembre 2016</p>
+					<p><button class="default_button">Commenter</button></p>
+				</div>
+				<div>
+					<img src="img/natalia.jpg">
+					<p class="legende">Natalia Vodianova, 1996</p>
+					<p class="poste_le">Posté le 25 octobre 2016</p>
+					<p><button class="default_button">Commenter</button></p>
 				</div>
 			</div>
 		</div>

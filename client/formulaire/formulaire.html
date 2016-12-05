@@ -1,42 +1,42 @@
 <template name="formulaire">
-<header>
-	<img onclick="$('.form').hide(); $('.accueil').show(); " src="../img/logo4b.png" style="max-width: 50%">
-</header>
-<div class="contenaireform">
-	<form class="formInscription">
-		<h2 style="margin-left: 0">Inscription</h2>
-		
-		<p>Prénom :
-			<input type="text" name="lastname">
-		</p>
-		<p>Nom :
-			<input type="text" name="firstname">
-		</p>
-		
-		<div class="types"> <p>Choisir un type : </p>
-		    <div class="type">
-				<p><input type="radio" name="gender" checked> Artiste </p>  
-			    <p><input type="radio" name="gender"> Mécène </p>
-		    </div>	
-		</div>
+	<header>
+		<img onclick="$('.form').hide(); $('.accueil').show(); " src="../img/logo4b.png" style="max-width: 50%">
+	</header>
+	<div class="contenaireform">
+		<div class="formInscription">
+			<h2 style="margin-left: 0">Inscription</h2>
+			
+			<p>Prénom :
+				<input type="text" name="lastname">
+			</p>
+			<p>Nom :
+				<input type="text" name="firstname">
+			</p>
+			
+			<div class="types"> <p>Choisir un type : </p>
+			    <div class="type">
+					<p><input type="radio" name="gender" checked> Artiste </p>  
+				    <p><input type="radio" name="gender"> Mécène </p>
+			    </div>	
+			</div>
 
-		<p>Adresse e-mail :
-			<input type="text" name="mail">
-		</p>
+			<p>Adresse e-mail :
+				<input type="text" name="mail">
+			</p>
+			
+			<p>
+				Mot de passe :
+				<input type="password" name="password">
+			</p>
+			<p>
+				Confirmer le mot de passe : 
+				<input type="password" name="confpassword">
+			</p>
+			
+		</div>
+		<button class="default_button" onclick="$( '.descr' ).show(); $( '.accueil' ).hide(); $( '.form' ).hide();">Valider</button>
 		
-		<p>
-			Mot de passe :
-			<input type="password" name="password">
-		</p>
-		<p>
-			Confirmer le mot de passe : 
-			<input type="password" name="confpassword">
-		</p>
-		
-	</form>
-	<button class="default_button" onclick="$( '.descr' ).show(); $( '.accueil' ).hide(); $( '.form' ).hide();">Valider</button>
-	
-</div>
+	</div>
 </template>
 
 
