@@ -31,23 +31,10 @@
 
 .formDescriptionP input{
 	display: flex;
-	/*align-self: center;*/
 	width: 100%;
 }
 
 .contenaireform button {
-	margin-top: 20px;
-}
-
-button {
-	display: flex;
-	align-self: center;
-	margin-top: 20px;
-}
-
-.ajoutPost h1 {
-	display: flex;
-	align-self: center;
 	margin-top: 20px;
 }
 
